@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- my cv page -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>CV Emanuele Baldi</title>
+</head>
+<body> 
+	<h1><b>Curriculum Vitae</b></h1>
+    <h2>Baldi Emanuele</h2>
+    
+      <figure>
+        <img src="./pic/download.jpg" />
+        <figcaption>&copy; Linkedin</figcaption>
+    </figure>
+        
+    <h3><b>INFORMAZIONI PERSONALI</b></h3>
+    <ul>
+    	<li> Via Bartolomeo Sestini, 121 - 51100 Pistoia (PT) </li>
+    	<li> (+39) 3395477304 </li>
+    	<li> baldiemanuele.pt@gmail.com </li>
+    	<li> M &vert; 01&sol;11&sol;1993 &vert; Italiana </li>
+    </ul>
+    <hr>
+    <h3><b>ESPERIENZA PROFESSIONALE</b></h3>
+    <p>
+    01&sol;2019 - 19&sol;07&sol;2019
+    <br>
+    <h4><b>Analista Statistico</b></h4>
+    </p>
+    	<ul>
+    	<li> MY Group S.p.A. </li>
+    	<li> Via Fratelli Cervi, 51 - 50065 Pontassieve (FI) </li>
+    	<li> Consulenza finanziaria aziendale </li>
+    	<li> Attività o settore: Finanza </li>
+    	</ul>
+    <p>
+    01&sol;2018 - 04&sol;2018
+    <br>
+    <h4><b>Collaboratore e analista statistico</b></h4>
+    </p>
+    	<ul>
+    	<li> EU-FER "Economic Uncertainty and Fertility in Europe", Firenze (FI) </li>
+    	<li> <a href="https://danielevignoli.com/eu-fer"> https://danielevignoli.com/eu-fer </a></li>
+    	<li> Attività di rilevazione delle informazioni </li>
+    	<li> Attività o settore: Istruzione </li>
+    	</ul>
+    	
+    <h3> Contact me: </h3>
+    <form action="/comment" method="post">
+    
+    Cities available: <br>
+    <div>
+    <label for="milano">Milano</label>
+    	<input type="radio" id="milano" name="favCity" value="Milano"checked>
+    <label for="firenze">Firenze</label>
+    	<input type="radio" id="firenze" name="favCity" value="Firenze">
+    <label for="roma">Roma</label>
+    	<input type="radio" id="roma" name="favCity" value="Roma">
+    </div>
+    <br>
+    
+     <div>
+     <label for="name">Name: </label>
+            <input type="text" id="name" name="name sender" placeholder="name and surname" required>
+     </div>
+     <br>
+     <div>
+     <label for="data">Date: </label>
+     		<input type="date" id="data" name="contact date" required>
+     </div>
+     <br>
+     <div>
+     <label for="mail">E-mail: </label>
+     		<input type="text" id="mail" name="mail sender" placeholder="ex. pippo@gmail.com" required>
+     </div>
+     <br>
+     <div>
+     Message: <br>
+     <textarea name="message" required>Enter your message here.</textarea>
+     </div>
+     <br>
+     <div>
+     <button type="submit">Send</button>
+     </div>
+     </form>
+</body>
+</html>
