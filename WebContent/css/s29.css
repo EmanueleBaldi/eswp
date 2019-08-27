@@ -19,5 +19,6 @@ div>span {
 }
 
 input:hover {
-    color: blue
+    background-color: blue;
+    color: white;
 }

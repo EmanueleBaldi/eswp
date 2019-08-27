@@ -5,36 +5,51 @@
 <title>Slide 41</title>
 </head>
 <body>
-    <h1>Array</h1>
+	<h1>Array</h1>
 
-    <p>
-        Back to <a href="./index.html">home</a>
-    </p>
+	<p>
+		Back to <a href="./index.html">home</a>
+	</p>
 
-    <textarea id="target" rows="20" cols="80"></textarea>
+	<textarea id="target" rows="20" cols="80"></textarea>
 
-    <script type="text/javascript">
-        let target = document.getElementById('target');
+	<script type="text/javascript">
+		let target = document.getElementById('target');
 
-        let data = [1, 'hello', [true, 42.24]];
-        target.value += data + '\n';
-        console.log(data.length);
+		let data = [ 1, 'hello', [ true, 42.24 ] ];
+		target.value += data + '\n';
+		console.log(data.length);
 
-        console.log(data[1], data[2][1]);
-        data[2] = false;
+		console.log(data[1], data[2][1]);
+		data[2] = false;
 
-        for(let i = 0; i < data.length; i++) {
-            console.log(data[i]);
-        }
+		for (let i = 0; i < data.length; i++) {
+			console.log(data[i]);
+		}
 
-        console.log(data.join(), data.toString());
+		console.log(data.join(), data.toString());
 
-        target.value += 'pop: ' + data.pop() + '\n';
-        target.value += 'shift: ' + data.shift() + '\n';
-        target.value += 'current status: ' + data + '\n';
-        data.push('push');
-        data.unshift('unshift');
-        target.value += 'final status: ' + data + '\n';
-    </script>
+		target.value += 'pop: ' + data.pop() + '\n';
+		target.value += 'shift: ' + data.shift() + '\n';
+		target.value += 'current status: ' + data + '\n';
+		data.push('push');
+		data.unshift('unshift');
+		target.value += 'final status: ' + data + '\n';
+
+		let vecchio = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+		let nuovo = [];
+		for (let i = 0; i < vecchio.length; i++) {
+			if (vecchio[i] === 7) {
+				continue;
+			}
+			nuovo.push(vecchio[i]);
+		}
+		console.log(nuovo);
+		target.value += nuovo + '\n';
+		
+		nuovo.splice(8,1);
+		console.log(nuovo);
+		target.value += nuovo + '\n';
+	</script>
 </body>
 </html>

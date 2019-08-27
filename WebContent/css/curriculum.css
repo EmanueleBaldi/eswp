@@ -1,0 +1,14 @@
+h1 {
+	color: #00ecec;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	color: #218bf5;
+}
+
+img: hover {
+	width: 150px ;
+	height: 150px ;
+}

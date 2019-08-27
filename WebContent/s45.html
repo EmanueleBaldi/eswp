@@ -44,26 +44,26 @@
 	            return;
             }
 
-            if (this.status != 200) {
+            if (this.status != 200) { //200 è il modo in http per dire che la richiesta è andata a buon fine
                 target.value += "[Something went wrong: " + this.status + "]\n";
                 return;
             }
 
-            target.value += this.responseText;
+            target.value += this.responseText; //con this indichiamo l'oggetto corrente, che in questo caso è l'oggetto XHR
         }
 
         function getTextDetailed() {
-            let request = new XMLHttpRequest();
-            request.onreadystatechange = callback;
+            let request = new XMLHttpRequest(); //mi creo un oggetto XMLHttpRequest()
+            request.onreadystatechange = callback; //svolge la stessa funzione di onload
             request.open("GET", "/eswp/s45.txt");
             request.send();
         }
 
         function getText() {
-            let request = new XMLHttpRequest();
-            request.onload = callback;
+            let request = new XMLHttpRequest(); //mi creo un oggetto XMLHttpRequest()
+            request.onload = callback; // specifico con la proprietà onload che la risposta deve arrivare a callback
             request.open("GET", "/eswp/s45.txt");
-            request.send();
+            request.send(); 
         }
     </script>
 </body>
