@@ -1,0 +1,11 @@
+.green {
+	color: #00ca00;
+}
+
+.red {
+	color: red;
+}
+
+#numero, #results {
+	margin: 3px;
+}
